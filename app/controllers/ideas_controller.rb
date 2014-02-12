@@ -33,7 +33,7 @@ class IdeasController < ApplicationController
   def update
     @idea = Idea.find(params[:id])
     if @idea.update(idea_params)
-      redirect_to @idea, notice: 'Idea was successfully updated.'
+      redirect_to @idea, notice: 'Woohooo! Idea was successfully updated.'
     else
       render action: 'edit'
     end

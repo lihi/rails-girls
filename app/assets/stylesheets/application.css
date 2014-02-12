@@ -11,3 +11,15 @@
  *= require_self
  *= require_tree .
  */
+body {
+  padding-top: 100px;
+  background-image: url(http://www.tehcute.com/pics/201110/marshmellow-kitten-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+footer { margin-top: 100px; margin-bottom: 20px; }
+th { border-bottom: 1px solid #DDD; }
+td, th { padding: 10px; }
+strong { display: block; }
+
