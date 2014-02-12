@@ -1,4 +1,5 @@
 class IdeasController < ApplicationController
+  before_action :set_tab
 
   def index
     @ideas = Idea.all
@@ -49,6 +50,10 @@ class IdeasController < ApplicationController
   # Only allow a trusted parameter "white list" through.
   def idea_params
     params.require(:idea).permit(:name, :description, :picture)
+  end
+
+  def set_tab
+    @ideas_tab_klass = :active
   end
 
 end
